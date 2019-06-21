@@ -459,7 +459,7 @@ void docoeffs()
 	x1 = doub0;
 	x2 = doub0;
 	x3 = doub0;
-	if (NULL != gets(buf)) {
+	if (NULL != fgets(buf,256,stdin)) {
 		if (buf[0] == 'q')
 			exit(0);
 		if (n == 0) {
